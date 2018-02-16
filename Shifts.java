@@ -1,34 +1,3 @@
-/**
- * 
- */
-package fte.rascan.entity;
-
-import java.util.Date;
-import java.util.UUID;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.UpdateTimestamp;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-/**
- * @author genzzz
- *
- */
 @Entity
 @Table(name="SHIFTS")
 public class Shifts {
