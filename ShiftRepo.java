@@ -1,38 +1,3 @@
-/**
- *  Data access object Implementation
- */
-package fte.rascan.dao.repo;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
-
-import javax.persistence.NoResultException;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
-import javax.transaction.Transactional;
-import javax.validation.ConstraintViolationException;
-
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
-
-import fte.api.Errors;
-import fte.api.Page;
-import fte.api.State;
-import fte.api.Successful;
-import fte.rascan.dao.ShiftDao;
-import fte.rascan.entity.Schedules;
-import fte.rascan.entity.Shifts;
-
-/**
- * @author genzzz
- *
- */
 @Repository
 @Transactional
 public class ShiftRepo implements ShiftDao {
